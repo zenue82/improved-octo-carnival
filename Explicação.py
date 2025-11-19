@@ -34,3 +34,29 @@ A análise sintática é feita usando uma **pilha**, simulando o funcionamento b
 
 Ele valida expressões como:
 
+x = 10 + 20
+y = x * 2
+
+Isso se relaciona a:
+
+- Gramáticas Livres de Contexto (GLC)  
+- Autômatos com Pilha (AP)  
+
+---
+
+## 4. Fluxo Geral do Compilador
+
+1. **Entrada:** código simples (ex.: `x = 10 + 20;`)
+2. **Léxico:** tokens são gerados.
+3. **Sintático:** tokens são validados pela pilha.
+4. **Resultado:** o programa retorna se a expressão é válida.
+
+---
+
+## 5. Conclusão
+
+Esse mini compilador demonstra na prática como:
+
+- ER e AF reconhecem tokens  
+- GLC e AP validam a estrutura  
+- Compiladores reais usam exatamente esses modelos teóricos  
